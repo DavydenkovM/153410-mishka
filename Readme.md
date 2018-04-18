@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Mihail Davydenkov](https://up.htmlacademy.ru/adaptive/14/user/153410).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Походня](https://htmlacademy.ru/profile/id166319).
 
 ---
 
