@@ -4,9 +4,232 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="./index.html">
+        <!-- <img class="page-header__logo-img" srcset="https://placehold.it/100x50 320w" alt="Mishka"> -->
+        <img class="page-header__logo-img" src="https://placehold.it/100x50" alt="Mishka">
+      </a>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+      <nav class="main-nav">
+        <button class="main-nav__trigger">Открыть меню </button>
 
+        <ul class="main-nav__menu">
+          <li class="main-nav__menu-item main-nav__menu-item--active">
+            <a href="./catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="./form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="">
+              <span class="main-nav__icon">
+                <!-- svg here-->
+              </span>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="">
+              <span class="main-nav__icon">
+                <!-- svg here-->
+              </span>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class='main-container'>
+      <section class="shop-sections">
+        <div class="container">
+          <h1 class="shop-sections__header"> Милые штуки ручной работы для дома </h1>
+
+          <ul class="shop-sections__list">
+            <li class="shop-sections__item">
+              <a href="" class="container">
+                <p class="shop-sections__title">Предметы интерьера</p>
+                <span class="shop-sections__icon">
+                  <!-- svg here-->
+                </span>
+              </a>
+            </li>
+            <li class="shop-sections__item">
+              <a href="" class="container">
+                <p class="shop-sections__title">Детские игрушки</p>
+                <span class="shop-sections__icon">
+                  <!-- svg here-->
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="best-deals">
+        <div class="container">
+          <div class="best-deals__card">
+            <h2 class="best-deals__title">Вязанные корзинки</h2>
+            <span class="best-deals__hint">товар недели</span>
+
+            <p class="best-deals__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
+            </p>
+
+            <table class="best-deals__list">
+              <tr class="best-deals__item">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="best-deals__item">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="best-deals__item">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+
+            <div class="best-deals__price">
+              <b> Цена: 990 руб. </b>
+            </div>
+            <button class="best-deals__order-btn"> Заказать </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections-separator">
+        <hr class="sections-separator__wave-line">
+      </div>
+
+      <section class="about-us">
+        <div class="container">
+          <h2 class="about-us__header">Коротко о нас:</h2>
+
+          <ul class="about-us__list">
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Экологически чистые материалы</p>
+            </li>
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Поддержка отечественного производителя</p>
+            </li>
+            <li class="about-us__item">
+              <span class="about-us__icon">
+                <!-- svg here-->
+              </span>
+              <p class="about-us__title">Поставляется в подарочной упаковке</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container slider">
+          <h2 class="reviews__header">Отзывы</h2>
+
+          <div class="slider__list">
+            <blockquote class="slider__item">
+              <p class="reviews__content"> Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксесуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
+                набирают больше лайков!
+              </p>
+
+              <div class="reviews__person">
+                <b class="reviews__person_name">Анастасия Красильникова</b>
+                <p class="reviews__person_nickname"> @misssssiskras</p>
+              </div>
+            </blockquote>
+          </div>
+
+          <p class="reviews__controls">
+            <button class="reviews__prev" type="button"></button>
+            <button class="reviews__next" type="button"></button>
+          </p>
+
+          <button class="reviews__call-to-action" type="button">Написать</button>
+        </div>
+      </section>
+
+      <div class="sections-separator">
+        <hr class="sections-separator__wave-line">
+      </div>
+
+      <section class="contacts">
+        <h2 class="contacts__header">Контакты</h2>
+
+        <table class="contacts__list">
+          <tr class="contacts__item">
+            <td>e-mail:</td>
+            <td>mimimishkashop.ru</td>
+          </tr>
+          <tr class="contacts_item">
+            <td>адрес:</td>
+            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523"
+          width="600" height="450"></iframe>
+
+        <button class="reviews__call-to-action" type="button">Напишите нам</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="page-footer__social-links">
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+        </ul>
+
+        <p class="page-footer__copyright">
+          <b>Разработано</b>
+
+          <span class="page-footer__copyright-icon">
+            <!-- svg here-->
+          </span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
