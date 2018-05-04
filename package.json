@@ -4,13 +4,16 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
-    "gulp": "3.9.x",
+    "gulp": "^3.9.1",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
     "gulp-sass": "4.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "normalize-scss": "^7.0.1",
+    "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },

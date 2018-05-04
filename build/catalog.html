@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="./index.html">
+        <!-- <img class="page-header__logo-img" srcset="https://placehold.it/100x50 320w" alt="Mishka"> -->
+        <img class="page-header__logo-img" src="https://placehold.it/100x50" alt="Mishka">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__trigger">Открыть меню </button>
+
+        <ul class="main-nav__menu">
+          <li class="main-nav__menu-item main-nav__menu-item--active">
+            <a href="./catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="./form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="">
+              <span class="main-nav__icon">
+                <!-- svg here-->
+              </span>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="">
+              <span class="main-nav__icon">
+                <!-- svg here-->
+              </span>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="showcase">
+        <h1 class="showcase__title">Каталог продуктов</h1>
+
+        <article class="showcase__product product-card">
+          <div class="container">
+            <a class="product-card__ref" href="">
+              <img class="product-card__img" src="https://placehold.it/260x195" alt="Rabbit">
+            </a>
+
+            <div class="product-card__description">
+              <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+              <span class="product-card__specification"> Рост 30 см, вес 200 г </span>
+            </div>
+          </div>
+
+          <div class="product-card__price">
+            <b class="product-card__amount">1 200 руб.</b>
+            <button class="product-card__cart">
+              <!--svg here-->
+            </button>
+          </div>
+        </article>
+
+        <article class="showcase__product product-card">
+          <div class="container">
+            <a class="product-card__ref" href="">
+              <img class="product-card__img" src="https://placehold.it/260x195" alt="Mishka">
+            </a>
+
+            <div class="product-card__description">
+              <h2 class="product-card__title">Корзинка для белья</h2>
+              <span class="product-card__specification">Диаметр 15 см, высота 10 см </span>
+            </div>
+          </div>
+
+          <div class="product-card__price">
+            <b class="product-card__amount">690 руб.</b>
+            <button class="product-card__cart">
+              <!--svg here-->
+            </button>
+          </div>
+        </article>
+
+        <article class="showcase__product product-card">
+          <div class="container">
+            <a class="product-card__ref" href="">
+              <img class="product-card__img" src="https://placehold.it/260x195" alt="Mishka">
+            </a>
+
+            <div class="product-card__description">
+              <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+              <span class="product-card__specification">Диаметр 30 см, высота 30 см </span>
+            </div>
+          </div>
+
+          <div class="product-card__price">
+            <b class="product-card__amount">1 500 руб.</b>
+            <button class="product-card__cart">
+              <!--svg here-->
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="production-process">
+        <div class="container">
+          <h2 class="production-process__hidden-title">Производство</h2>
+
+          <article class="production-process__card">
+            <div class="container">
+              <span class="production-process__icon">
+                <!-- svg here-->
+              </span>
+              <h3 class="production-process__title"> Процесс производства </h3>
+            </div>
+
+            <div class="production-process__video-frame">
+              <iframe src="https://placehold.it/260x195"></iframe>
+            </div>
+
+            <p class="production-process__description">
+              По просьбам наших любимых фолловеров мы сняли подробное видео о том, как появляются наши товары.
+            </p>
+
+            <a class="production-process__call-to-action" href="./form.html">сделать заказ</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="page-footer__social-links">
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="">
+              <!-- svg here-->
+            </a>
+          </li>
+        </ul>
+
+        <p class="page-footer__copyright">
+          <b>Разработано</b>
+
+          <span class="page-footer__copyright-icon">
+            <!-- svg here-->
+          </span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
