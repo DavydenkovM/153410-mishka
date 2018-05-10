@@ -1,0 +1,59 @@
+.reviews {
+  display: flex;
+  margin-bottom: 48px;
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.reviews__header {
+  margin-top: 37px;
+  margin-bottom: 28px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__content {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.reviews__person {
+  margin-top: 22px;
+
+  &-nickname {
+    margin: 0;
+    margin-top: 2px;
+  }
+}
+
+.reviews__controls {
+  display: flex;
+  width: 100%;
+  margin-top: 33px;
+
+  &-item {
+    @include reset-button();
+
+    flex-grow: 1;
+    border: 1px solid #ececec;
+
+    svg {
+      padding: 9px;
+      padding-right: 11px;
+      width: 51px;
+      height: 30px
+    }
+  }
+}
+
+.reviews__call-to-action {
+  margin-top: 35px;
+  @include reset-button();
+  @include black-bordered-button();
+}

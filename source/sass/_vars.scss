@@ -2,8 +2,9 @@ $bg-white: #ffffff;
 
 $mobile-width: 320px;
 $mobile-padding: 30px;
-$mobile-container-width: $mobile-width - 2 * $mobile-padding;
+$mobile-padding-flex: ($mobile-padding * 100% / $mobile-width);
 
+$mobile-container-width: $mobile-width - 2 * $mobile-padding;
 $tablet-width: 768px;
 
 $desktop-width: 1200px;

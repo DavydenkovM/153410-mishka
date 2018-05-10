@@ -33,7 +33,12 @@ gulp.task("fonts", function() {
     .pipe(gulp.dest("build/fonts"))
 });
 
-gulp.task("serve", ["html", "style", "fonts"], function() {
+gulp.task("images", function() {
+  gulp.src("source/img/*.*")
+    .pipe(gulp.dest("build/img"))
+});
+
+gulp.task("serve", ["html", "style", "fonts", "images"], function() {
   server.init({
     server: "build/",
     notify: false,

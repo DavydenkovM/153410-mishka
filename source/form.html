@@ -3,43 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="./index.html">
-        <!-- <img class="page-header__logo-img" srcset="https://placehold.it/100x50 320w" alt="Mishka"> -->
-        <img class="page-header__logo-img" src="https://placehold.it/100x50" alt="Mishka">
-      </a>
+      <div class="container">
+        <nav class="main-nav">
+          <input type="checkbox" id="main-nav__checkbox">
 
-      <nav class="main-nav">
-        <button class="main-nav__trigger">Открыть меню </button>
+          <div class="main-nav__top-row">
+            <a class="main-nav__logo" href="./index.html">
+              <include src="./source/img/logo-mobile.svg"></include>
+            </a>
 
-        <ul class="main-nav__menu">
-          <li class="main-nav__menu-item main-nav__menu-item--active">
-            <a href="./catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="./form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="">
-              <span class="main-nav__icon">
-                <!-- svg here-->
+            <label for="main-nav__checkbox" class="main-nav__trigger">
+              <span class="main-nav__trigger-icon-open">
+                <include src="./source/img/icon-menu-open.svg"></include>
               </span>
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="">
-              <span class="main-nav__icon">
-                <!-- svg here-->
+
+              <span class="main-nav__trigger-icon-close">
+                <include src="./source/img/icon-menu-close.svg"></include>
               </span>
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
+            </label>
+          </div>
+
+          <ul class="main-nav__menu">
+            <li class="main-nav__menu-item main-nav__menu-item--active">
+              <div class="main-nav__menu-item-inner">
+                <a href="./catalog.html" class="main-nav__menu-item-inner--wo-icon">
+                  Каталог товаров
+                </a>
+              </div>
+            </li>
+            <li class="main-nav__menu-item main-nav__menu-item--wo-icon">
+              <div class="main-nav__menu-item-inner">
+                <a href="./form.html" class="main-nav__menu-item-inner--wo-icon">
+                  Вязание на заказ
+                </a>
+              </div>
+            </li>
+            <li class="main-nav__menu-item">
+              <div class="main-nav__menu-item-inner">
+                <a href="">
+                  <div class="main-nav__menu-item-icon">
+                    <include src="./source/img/icon-search.svg"></include>
+                  </div>
+                  Поиск по сайту
+                </a>
+              </div>
+            </li>
+            <li class="main-nav__menu-item">
+              <div class="main-nav__menu-item-inner">
+                <a href="">
+                  <div class="main-nav__menu-item-icon">
+                    <include src="./source/img/icon-cart.svg"></include>
+                  </div>
+                  Корзина: пока пуста
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class='main-container'>
@@ -157,21 +184,21 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social">
+      <div class="container">
         <ul class="page-footer__social-links">
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-insta.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-fb.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-twitter.svg"></include>
             </a>
           </li>
         </ul>
@@ -180,7 +207,7 @@
           <b>Разработано</b>
 
           <span class="page-footer__copyright-icon">
-            <!-- svg here-->
+            <include src="./source/img/htmlacademy.svg"></include>
           </span>
         </p>
       </div>

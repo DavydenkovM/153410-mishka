@@ -1,0 +1,36 @@
+.about-us {
+  display: flex;
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+.about-us__header {
+  margin-top: 28px;
+  width: 100%;
+}
+
+.about-us__list {
+  @include reset-list();
+}
+
+.about-us__item {
+  svg {
+    fill: #63d1bb;
+    // width: 46px;
+    height: 46px;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+}
+
+.about-us__title {
+  font-family: 'Open Sans Bold';
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}

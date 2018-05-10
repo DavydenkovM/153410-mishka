@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.contacts__header {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.contacts__list {
+  @include reset-table();
+
+  margin: 11px 0 6px;
+  font-size: 15px;
+  display: flex;
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 28px;
+  line-height: 2;
+  td {
+    &:first-child {
+      min-width: 75px;
+    }
+  }
+}
+
+.contacts iframe {
+  height: 455px;
+}

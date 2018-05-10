@@ -1,0 +1,80 @@
+.best-deals__title-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: $mobile-padding-flex;
+  padding-top: 33px;
+  padding-bottom: 20px;
+}
+
+.best-deals__title {
+  font-size: 25px;
+  font-family: 'Open Sans Bold';
+  margin: 0;
+  margin-right: auto;
+}
+
+.best-deals__hint {
+  font-size: 17px;
+  color: #63d1bb;
+  font-family: 'Open Sans';
+  margin: 0;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.best-deals__description {
+  margin: 0;
+  margin-right: auto;
+  padding-left: $mobile-padding-flex;
+  font-size: 15px;
+  opacity: 0.8;
+  color: #444444;
+  line-height: 1.6;
+}
+
+.best-deals__list-wrapper {
+  margin: 20px $mobile-padding-flex;
+  display: flex;
+}
+
+.best-deals__list {
+  @include reset-table();
+
+  margin-bottom: 12px;
+}
+
+.best-deals__item {
+  border-bottom: 1px solid #dfdfdf;
+  height: 38px;
+
+  td {
+    font-size: 15px;
+  }
+}
+
+.best-deals__triple-set {
+  margin-top: 10px;
+  padding: 0 $mobile-padding-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.best-deals__price {
+  margin-top: 22px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.best-deals__price-block {
+  padding: 0 $mobile-padding-flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.best-deals__order-btn {
+  @include reset-button();
+  @include black-bordered-button();
+
+  margin: 24px auto;
+}

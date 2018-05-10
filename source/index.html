@@ -72,24 +72,28 @@
 
     <main class='main-container'>
       <section class="shop-sections">
-        <div class="container">
-          <h1 class="shop-sections__header"> Милые штуки ручной работы для дома </h1>
+        <div class="shop-sections__inner">
+          <div class="shop-sections__promo">
+            <div class="container">
+              <h1 class="shop-sections__header"> Милые штуки ручной <br> работы для дома </h1>
+            </div>
+          </div>
 
           <ul class="shop-sections__list">
-            <li class="shop-sections__item">
-              <a href="" class="container">
-                <p class="shop-sections__title">Предметы интерьера</p>
-                <span class="shop-sections__icon">
-                  <!-- svg here-->
-                </span>
+            <li class="shop-sections__item shop-sections__item--active">
+              <a href="" class="shop-sections__item-inner">
+                <p class="shop-sections__title">Предметы <br> интерьера</p>
+                <div class="shop-sections__icon">
+                  <include src="./source/img/icon-interior.svg"></include>
+                </div>
               </a>
             </li>
             <li class="shop-sections__item">
-              <a href="" class="container">
-                <p class="shop-sections__title">Детские игрушки</p>
-                <span class="shop-sections__icon">
-                  <!-- svg here-->
-                </span>
+              <a href="" class="shop-sections__item-inner">
+                <p class="shop-sections__title">Детские <br> игрушки</p>
+                <div class="shop-sections__icon">
+                  <include src="./source/img/icon-toy.svg"></include>
+                </div>
               </a>
             </li>
           </ul>
@@ -97,15 +101,17 @@
       </section>
 
       <section class="best-deals">
-        <div class="container">
-          <div class="best-deals__card">
+        <div class="best-deals__card">
+          <div class="best-deals__title-wrapper">
             <h2 class="best-deals__title">Вязанные корзинки</h2>
-            <span class="best-deals__hint">товар недели</span>
+            <p class="best-deals__hint">товар недели</p>
+          </div>
 
-            <p class="best-deals__description">
-              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
-            </p>
+          <p class="best-deals__description">
+            Экологически чистая пряжа, <br> ручная работа. Доступны в шести расцветках, и трех размерах
+          </p>
 
+          <div class="best-deals__list-wrapper">
             <table class="best-deals__list">
               <tr class="best-deals__item">
                 <td>Цвет:</td>
@@ -120,10 +126,17 @@
                 <td>15 см</td>
               </tr>
             </table>
+          </div>
 
+          <div class="best-deals__triple-set">
+            <img src="./img/triple-set-mobile@1x.jpg" alt="">
+          </div>
+
+          <div class="best-deals__price-block">
             <div class="best-deals__price">
               <b> Цена: 990 руб. </b>
             </div>
+
             <button class="best-deals__order-btn"> Заказать </button>
           </div>
         </div>
@@ -139,40 +152,40 @@
 
           <ul class="about-us__list">
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
-              <p class="about-us__title">Экологически чистые материалы</p>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-flower.svg"></include>
+              </div>
+              <p class="about-us__title">Экологически <br> чистые материалы</p>
             </li>
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
-              <p class="about-us__title">Скандинавский стиль по российской цене</p>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-money.svg"></include>
+              </div>
+              <p class="about-us__title">Скандинавский стиль <br> по российской цене</p>
             </li>
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
-              <p class="about-us__title">Увеличивает лайки на фотографиях</p>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-heart.svg"></include>
+              </div>
+              <p class="about-us__title">Увеличивает лайки <br> на фотографиях</p>
             </li>
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
-              <p class="about-us__title">Связано вручную с любовью и умилением</p>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-ball.svg"></include>
+              </div>
+              <p class="about-us__title">Связано вручную с <br> любовью и умилением</p>
             </li>
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-rocket.svg"></include>
+              </div>
               <p class="about-us__title">Поддержка отечественного производителя</p>
             </li>
             <li class="about-us__item">
-              <span class="about-us__icon">
-                <!-- svg here-->
-              </span>
-              <p class="about-us__title">Поставляется в подарочной упаковке</p>
+              <div class="about-us__icon">
+                <include src="./source/img/icon-feature-gift.svg"></include>
+              </div>
+              <p class="about-us__title">Поставляется в <br> подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -183,23 +196,28 @@
           <h2 class="reviews__header">Отзывы</h2>
 
           <div class="slider__list">
-            <blockquote class="slider__item">
+            <blockquote class="reviews__item slider__item">
               <p class="reviews__content"> Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
                 В отчаянии, я накупила аксесуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
                 набирают больше лайков!
               </p>
 
               <div class="reviews__person">
-                <b class="reviews__person_name">Анастасия Красильникова</b>
-                <p class="reviews__person_nickname"> @misssssiskras</p>
+                <b class="reviews__person-name">Анастасия Красильникова</b>
+                <p class="reviews__person-nickname"> @misssssiskras</p>
               </div>
             </blockquote>
           </div>
 
-          <p class="reviews__controls">
-            <button class="reviews__prev" type="button"></button>
-            <button class="reviews__next" type="button"></button>
-          </p>
+          <div class="reviews__controls">
+            <button class="reviews__controls-item" type="button">
+              <include src="./source/img/icon-left-arrow.svg"></include>
+            </button>
+
+            <button class="reviews__controls-item" type="button">
+              <include src="./source/img/icon-right-arrow.svg"></include>
+            </button>
+          </div>
 
           <button class="reviews__call-to-action" type="button">Написать</button>
         </div>
@@ -210,42 +228,45 @@
       </div>
 
       <section class="contacts">
-        <h2 class="contacts__header">Контакты</h2>
+        <div class="container">
+          <h2 class="contacts__header">Контакты</h2>
 
-        <table class="contacts__list">
-          <tr class="contacts__item">
-            <td>e-mail:</td>
-            <td>mimimishkashop.ru</td>
-          </tr>
-          <tr class="contacts_item">
-            <td>адрес:</td>
-            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+          <table class="contacts__list">
+            <tr class="contacts__item">
+              <td>e-mail:</td>
+              <td>info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="contacts__item">
+              <td>адрес:</td>
+              <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523"
-          width="600" height="450"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523"></iframe>
 
-        <button class="reviews__call-to-action" type="button">Напишите нам</button>
+        <div class="container">
+          <button class="reviews__call-to-action" type="button">Напишите нам</button>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social">
+      <div class="container">
         <ul class="page-footer__social-links">
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-insta.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-fb.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="">
-              <!-- svg here-->
+              <include src="./source/img/icon-twitter.svg"></include>
             </a>
           </li>
         </ul>
@@ -254,7 +275,7 @@
           <b>Разработано</b>
 
           <span class="page-footer__copyright-icon">
-            <!-- svg here-->
+            <include src="./source/img/htmlacademy.svg"></include>
           </span>
         </p>
       </div>

@@ -11,12 +11,14 @@
   align-items: center;
   padding: 22.5px 0;
   min-width: $mobile-container-width;
+  width: 100%
 }
 
 .main-nav__logo {
   min-width: $mobile-container-width - 35px;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 
   svg {
     padding-left: 34px;
@@ -56,7 +58,7 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  padding: 0 $mobile-padding;
+  padding: 0 $mobile-padding-flex;
   overflow-y: auto;
 
   text-align: left;
