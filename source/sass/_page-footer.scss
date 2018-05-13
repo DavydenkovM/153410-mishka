@@ -1,5 +1,6 @@
 .page-footer {
   display: flex;
+  background-color: #f1f1f1;
 
   .container {
     display: flex;
@@ -11,7 +12,7 @@
   @include reset-list();
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   width: 300px;
@@ -19,15 +20,22 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.page-footer__social-item {
+  padding: 0 23px;
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
   width: 100%;
+  height: 80px;
 
   b {
-    display: flex;
-    height: 30px;
+    font-family: 'Open Sans Bold';
+    display: block;
+    height: 40px;
     padding-right: 20px;
   }
 }
@@ -37,6 +45,7 @@
     fill: #63d1bb;
     height: 40px;
     width: 40px;
+    padding-left: 15px;
 
     path {
       fill: #63d1bb;

@@ -72,91 +72,105 @@
 
     <main class='main-container'>
       <section class="showcase">
-        <h1 class="showcase__title">Каталог продуктов</h1>
+        <div class="showcase__title-wrapper">
+          <h1 class="showcase__title">Каталог продуктов</h1>
+        </div>
 
         <article class="showcase__product product-card">
           <div class="container">
-            <a class="product-card__ref" href="">
-              <img class="product-card__img" src="https://placehold.it/260x195" alt="Rabbit">
-            </a>
+            <div class="product-card__inner">
+              <a class="product-card__ref" href=""></a>
+                <img class="product-card__img" src="./img/photo-hare-mobile@1x.jpg" alt="hare">
+              </a>
 
-            <div class="product-card__description">
-              <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
-              <span class="product-card__specification"> Рост 30 см, вес 200 г </span>
+              <div class="product-card__description">
+                <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+                <span class="product-card__specification"> Рост 30 см, вес 200 г </span>
+              </div>
+
+              <div class="product-card__price">
+                <b class="product-card__amount">1 200 руб.</b>
+
+                <button class="product-card__cart">
+                  <include src="./source/img/icon-cart.svg"></include>
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div class="product-card__price">
-            <b class="product-card__amount">1 200 руб.</b>
-            <button class="product-card__cart">
-              <!--svg here-->
-            </button>
           </div>
         </article>
 
         <article class="showcase__product product-card">
           <div class="container">
-            <a class="product-card__ref" href="">
-              <img class="product-card__img" src="https://placehold.it/260x195" alt="Mishka">
-            </a>
+            <div class="product-card__inner">
+              <a class="product-card__ref" href="">
+                <img class="product-card__img" src="./img/photo-bowl-mobile@1x.jpg" alt="hare">
+              </a>
 
-            <div class="product-card__description">
-              <h2 class="product-card__title">Корзинка для белья</h2>
-              <span class="product-card__specification">Диаметр 15 см, высота 10 см </span>
+              <div class="product-card__description">
+                <h2 class="product-card__title">Корзинка для белья</h2>
+                <span class="product-card__specification">Диаметр 15 см, высота 10 см </span>
+              </div>
+
+              <div class="product-card__price">
+                <b class="product-card__amount">690 руб.</b>
+                <button class="product-card__cart">
+                  <include src="./source/img/icon-cart.svg"></include>
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div class="product-card__price">
-            <b class="product-card__amount">690 руб.</b>
-            <button class="product-card__cart">
-              <!--svg here-->
-            </button>
           </div>
         </article>
 
         <article class="showcase__product product-card">
           <div class="container">
-            <a class="product-card__ref" href="">
-              <img class="product-card__img" src="https://placehold.it/260x195" alt="Mishka">
-            </a>
+            <div class="product-card__inner">
+              <a class="product-card__ref" href="">
+                <img class="product-card__img" src="./img/photo-toys-mobile@1x.jpg" alt="hare">
+              </a>
 
-            <div class="product-card__description">
-              <h2 class="product-card__title">Большая корзинка для игрушек</h2>
-              <span class="product-card__specification">Диаметр 30 см, высота 30 см </span>
+              <div class="product-card__description">
+                <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+                <span class="product-card__specification">Диаметр 30 см, высота 30 см </span>
+              </div>
+
+              <div class="product-card__price">
+                <b class="product-card__amount">1 500 руб.</b>
+                <button class="product-card__cart">
+                  <include src="./source/img/icon-cart.svg"></include>
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div class="product-card__price">
-            <b class="product-card__amount">1 500 руб.</b>
-            <button class="product-card__cart">
-              <!--svg here-->
-            </button>
           </div>
         </article>
       </section>
 
       <section class="production-process">
         <div class="container">
-          <h2 class="production-process__hidden-title">Производство</h2>
+          <div class="production-process__inner">
+            <h2 class="production-process__title">Производство</h2>
 
-          <article class="production-process__card">
-            <div class="container">
-              <span class="production-process__icon">
-                <!-- svg here-->
-              </span>
-              <h3 class="production-process__title"> Процесс производства </h3>
-            </div>
+            <article class="production-process__card">
+              <div class="production-process__video-wrapper">
+                <div class="production-process__icon">
+                  <include src="./source/img/icon-video.svg"></include>
+                </div>
+                <h3 class="production-process__header"> Процесс производства </h3>
+              </div>
 
-            <div class="production-process__video-frame">
-              <iframe src="https://placehold.it/260x195"></iframe>
-            </div>
+              <div class="production-process__video-frame">
+                <img class="product-card__img" src="./img/video-mobile@1x.jpg" alt="production-process">
+                <include src="./source/img/icon-play.svg"></include>
+              </div>
 
-            <p class="production-process__description">
-              По просьбам наших любимых фолловеров мы сняли подробное видео о том, как появляются наши товары.
-            </p>
+              <p class="production-process__description">
+                По просьбам наших <br> любимых фолловеров мы сняли подробное <br> видео о том, как появляются <br> наши товары.
+              </p>
 
-            <a class="production-process__call-to-action" href="./form.html">сделать заказ</a>
-          </article>
+              <div class="production-process__order">
+                <a class="production-process__call-to-action" href="./form.html">сделать заказ</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
