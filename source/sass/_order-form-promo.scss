@@ -1,0 +1,18 @@
+.order-form-promo {
+  height: 176px;
+  background: #f1f1f1;
+  display: flex;
+}
+
+.order-form-promo__title {
+  margin: auto;
+  padding: 0 $mobile-padding;
+  font-size: 27px;
+  font-family: 'Open Sans Bold';
+}
+
+.order-form-promo__text {
+  margin: 25px auto;
+  padding: 0 $mobile-padding;
+  font-size: 13px;
+}
